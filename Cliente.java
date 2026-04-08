@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Cliente {
 
     private String nome;
@@ -5,6 +7,7 @@ public class Cliente {
 
     public Cliente() {
 
+          Scanner sc = new Scanner(System.in);
 
         do {
             System.out.print("Digite o nome: ");
