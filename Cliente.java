@@ -4,6 +4,15 @@ public class Cliente {
     private String email;
 
     public Cliente(String nome, String email) {
+
+        if (nome.isEmpty()) {
+            System.out.println("Nome inválido");
+        }
+
+        if (email.isEmpty()) {
+            System.out.println("Email inválido");
+        }
+
         this.nome = nome;
         this.email = email;
     }
