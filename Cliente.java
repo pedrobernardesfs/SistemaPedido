@@ -3,18 +3,18 @@ public class Cliente {
     private String nome;
     private String email;
 
-    public Cliente(String nome, String email) {
+    public Cliente() {
 
-        if (nome.isEmpty()) {
-            System.out.println("Nome inválido");
-        }
 
-        if (email.isEmpty()) {
-            System.out.println("Email inválido");
-        }
+        do {
+            System.out.print("Digite o nome: ");
+            nome = sc.nextLine();
+        } while (nome.isEmpty());
 
-        this.nome = nome;
-        this.email = email;
+        do {
+            System.out.print("Digite o email: ");
+            email = sc.nextLine();
+        } while (email.isEmpty());
     }
 
     public String getNome() {
