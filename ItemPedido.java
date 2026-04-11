@@ -6,6 +6,9 @@ public class ItemPedido {
         this.produto = produto;
         this.quantidade = quantidade;
     }
+    public double getTotal(int quantidade, Produto produto) {
+        return quantidade * produto.getPreco();
+    }
 public Produto getProduto() {
     return produto;
 }
