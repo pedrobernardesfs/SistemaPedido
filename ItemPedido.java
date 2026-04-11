@@ -14,8 +14,7 @@ public int getQuantidade() {
 }
 
 public void setQuantidade (int quantidade) {
-    if (quantidade > 0) {
     this.quantidade = quantidade;
-    }
+
 }
 }
