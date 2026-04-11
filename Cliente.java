@@ -8,6 +8,11 @@ public class Cliente {
         this.email = email;
     }
 
+    public void dadosCliente( String nome, String email) {
+        System.out.println("Nome do cliente: " + nome );
+        System.out.println("Email do cliente: " + email);
+    }
+
     public String getNome() {
         return nome;
     }
