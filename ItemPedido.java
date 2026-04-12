@@ -1,23 +1,19 @@
 public class ItemPedido {
 
-    private Produto produto;
     private int quantidade;
-    public ItemPedido(Produto produto, int quantidade) {
-        this.produto = produto;
+    private Produto produto;
+
+    public ItemPedido(int quantidade, Produto produto) {
         this.quantidade = quantidade;
+        this.produto    = produto;
     }
-    public double getTotal(int quantidade, Produto produto) {
+
+    public int      getQuantidade() { return quantidade; }
+    public Produto  getProduto()    { return produto; }
+
+    public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
+
+    public double getSubtotal() {
         return quantidade * produto.getPreco();
     }
-public Produto getProduto() {
-    return produto;
-}
-public int getQuantidade() {
-    return quantidade;
-}
-
-public void setQuantidade (int quantidade) {
-    this.quantidade = quantidade;
-
-}
 }
