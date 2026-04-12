@@ -1,4 +1,5 @@
-  private String nome;
+public class Produto{
+private String nome;
     private double preco;
 
     public Produto(String nome, double preco) {
