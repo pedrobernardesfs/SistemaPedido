@@ -18,7 +18,6 @@ public class Main {
 
         System.out.println("   SISTEMA DE GESTÃO DE PEDIDOS");
 
-        // 1. Dados do cliente
         System.out.print("Nome do cliente : ");
         String nome = scanner.nextLine();
 
@@ -27,13 +26,11 @@ public class Main {
 
         Cliente cliente = new Cliente(nome, email);
 
-        // 2. Número do pedido
         System.out.print("Número do pedido: ");
         int numeroPedido = lerInteiroPositivo(scanner);
 
         Pedido pedido = new Pedido(numeroPedido, LocalDate.now(), cliente);
 
-        // 3. Seleção de produtos
         boolean adicionando = true;
 
         while (adicionando) {
@@ -66,14 +63,12 @@ public class Main {
             }
         }
 
-        // 4. Exibir resumo final
         System.out.println();
         pedido.exibirResumo();
 
         scanner.close();
     }
 
-    // Lê um inteiro qualquer, repetindo em caso de entrada inválida
     private static int lerInteiro(Scanner scanner) {
         while (true) {
             try {
@@ -83,8 +78,6 @@ public class Main {
             }
         }
     }
-
-    // Lê um inteiro positivo (>= 1)
     private static int lerInteiroPositivo(Scanner scanner) {
         while (true) {
             int valor = lerInteiro(scanner);
