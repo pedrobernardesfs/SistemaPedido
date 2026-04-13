@@ -28,7 +28,10 @@ O programa executa os seguintes passos:
 2. Valida se o campo não está vazio
 3. Solicita o e-mail
 4. Valida se o campo não está vazio
-5. Armazena os dados no objeto `Cliente`
+5. Armazena os dados no objeto Cliente`
+6. Recebe dados do Pedido
+7. Gera um Numero de pedido
+8. Retorna com dados e valor total do pedido
 
 ---
 
